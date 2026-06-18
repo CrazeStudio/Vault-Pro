@@ -306,7 +306,7 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
                     if (response.isSuccessful) {
                         val bodyString = response.body?.string() ?: ""
                         val obj = JSONObject(bodyString)
-                        fileSha = obj.optString("sha", null)
+                        fileSha = if (obj.has("sha")) obj.getString("sha") else null
                     }
                 }
 
