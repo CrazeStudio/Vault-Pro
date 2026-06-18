@@ -1,0 +1,6 @@
+{
+  "name": "Fortress",
+  "description": "Zero-knowledge offline-first encrypted password manager with integrated secure virtual keypad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
